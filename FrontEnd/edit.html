@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Editar</title>
+</head>
+<body>
+  
+<div class="d-flex justify-content-center">
+  <div class="form col-md-4 col-sm-12">
+                <form class="bg-light shadow border border-1 p-3" id="formEdit">
+                    <legend class="text-center">ACTUALIZAR PRODUCTO</legend>
+                    <div class="mb-3">
+                        <label for="cantidad" class="form-label">PRODUCTO:</label>
+                        <input type="text" class="form-control" id="producto" placeholder="" name="producto" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="cantidad" class="form-label">STOCK:</label>
+                      <input type="text" class="form-control" id="stock" placeholder="" name="stock" required>
+                    </div>
+
+                  <div class="mb-3">
+                    <label for="precio" class="form-label">PRECIO:</label>
+                    <input type="number" class="form-control" id="precio" name="precio" min="0" placeholder="0" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="imagen" class="form-label">URL IMAGEN:</label>
+                  <input type="text" class="form-control" id="imagen" name="imagen" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">DESCRIPCION:</label>
+                <textarea class="form-control" rows="5" id="descripcion" name="descripcion" required></textarea>
+            </div>
+                    <button type="submit" class="btn btn-primary col-12">Actualizar</button>
+    
+                </form>
+            </div>
+</div>
+
+<footer class="container-fluid bg-dark  text-white text-center">
+  <p>Copyright © 2024 Gabriel Molina</p>
+  <p class="mb-0">All Rights Reserved</p>
+</footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="./edit.js"></script>
+
+</body>
+</html>
